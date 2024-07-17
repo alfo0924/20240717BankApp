@@ -31,10 +31,52 @@
                 android:gravity="center"
                 android:orientation="vertical">
 
+                <TextView
+                    android:id="@+id/textView6"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="TextView"
+                    android:textAlignment="center" />
+
+                <ImageView
+                    android:id="@+id/imageView"
+                    android:layout_width="117dp"
+                    android:layout_height="43dp"
+                    android:layout_marginTop="10dp"
+                    app:srcCompat="@drawable/jpy" />
+
+                <TextView
+                    android:id="@+id/textView2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="15dp"
+                    android:text="JPY 餘額  :" />
+
+                <Button
+                    android:id="@+id/button3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="日幣換匯" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="129dp"
+                android:layout_height="214dp"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/textView5"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="TextView"
+                    android:textAlignment="center" />
+
                 <ImageView
                     android:id="@+id/imageView2"
-                    android:layout_width="99dp"
-                    android:layout_height="36dp"
+                    android:layout_width="95dp"
+                    android:layout_height="42dp"
+                    android:layout_marginTop="10dp"
                     app:srcCompat="@drawable/ntd" />
 
                 <TextView
@@ -42,7 +84,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_margin="15dp"
-                    android:text="新台幣存款" />
+                    android:text="NTD餘額  :" />
 
                 <Button
                     android:id="@+id/button2"
@@ -58,44 +100,26 @@
                 android:gravity="center"
                 android:orientation="vertical">
 
-                <ImageView
-                    android:id="@+id/imageView"
-                    android:layout_width="105dp"
-                    android:layout_height="42dp"
-                    app:srcCompat="@drawable/jpy" />
-
                 <TextView
-                    android:id="@+id/textView2"
+                    android:id="@+id/textView7"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_margin="15dp"
-                    android:text="日幣換匯" />
-
-                <Button
-                    android:id="@+id/button3"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="日幣換匯" />
-            </LinearLayout>
-
-            <LinearLayout
-                android:layout_width="129dp"
-                android:layout_height="214dp"
-                android:gravity="center"
-                android:orientation="vertical">
+                    android:text="TextView"
+                    android:textAlignment="center" />
 
                 <ImageView
                     android:id="@+id/imageView3"
                     android:layout_width="97dp"
                     android:layout_height="42dp"
-                    app:srcCompat="@drawable/usd" />
+                    app:srcCompat="@drawable/usd"
+                    android:layout_marginTop="10dp" />
 
                 <TextView
                     android:id="@+id/textView3"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_margin="15dp"
-                    android:text="美金換匯" />
+                    android:text="USD 餘額 :" />
 
                 <Button
                     android:id="@+id/button"
