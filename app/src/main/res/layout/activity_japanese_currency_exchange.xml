@@ -10,10 +10,12 @@
     <LinearLayout
         android:layout_width="408dp"
         android:layout_height="327dp"
+        android:layout_marginTop="168dp"
         android:gravity="center"
         android:orientation="vertical"
-        tools:layout_editor_absoluteX="2dp"
-        tools:layout_editor_absoluteY="151dp">
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
 
         <TextView
             android:id="@+id/textView12"
