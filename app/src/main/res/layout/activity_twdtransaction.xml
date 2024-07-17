@@ -26,7 +26,7 @@
             android:layout_height="wrap_content"
             android:text="新台幣存提款"
             android:textAlignment="center"
-            android:textSize="34sp"
+            android:textSize="48sp"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent" />
 
