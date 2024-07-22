@@ -1,8 +1,8 @@
 package com.example.a20240717bankapp;
 
-import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
+import android.widget.Button;
 
 import androidx.activity.EdgeToEdge;
 import androidx.appcompat.app.AppCompatActivity;
@@ -25,12 +25,20 @@ public class JapaneseCurrencyExchange extends AppCompatActivity {
             return insets;
         });
 
-        // Handle button click to start USDExchangeCurrency activity
-        findViewById(R.id.button).setOnClickListener(new View.OnClickListener() {
+        // Button click listeners
+        Button btnExchange = findViewById(R.id.button6);
+        btnExchange.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent(JapaneseCurrencyExchange.this, USDExchangeCurrency.class);
-                startActivity(intent);
+                // Implement your logic for currency exchange
+            }
+        });
+
+        Button btnBack = findViewById(R.id.button7);
+        btnBack.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                finish(); // Close this activity and return to previous one
             }
         });
     }

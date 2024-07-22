@@ -25,7 +25,7 @@ public class MainActivity extends AppCompatActivity {
             return insets;
         });
 
-        // Handle button click to start JapaneseCurrencyExchange activity
+        // Button click listeners
         findViewById(R.id.button3).setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -34,11 +34,18 @@ public class MainActivity extends AppCompatActivity {
             }
         });
 
-        // Handle button click to start TWDTransaction activity
         findViewById(R.id.button2).setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 Intent intent = new Intent(MainActivity.this, TWDTransaction.class);
+                startActivity(intent);
+            }
+        });
+
+        findViewById(R.id.button).setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(MainActivity.this, USDExchangeCurrency.class);
                 startActivity(intent);
             }
         });
