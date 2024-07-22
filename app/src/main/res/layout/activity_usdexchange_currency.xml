@@ -47,7 +47,7 @@
                 android:layout_weight="1"
                 android:ems="10"
                 android:hint="請輸入金額"
-                android:inputType="text" />
+                android:inputType="number" />
 
         </LinearLayout>
 
@@ -72,7 +72,7 @@
                 android:layout_weight="1"
                 android:ems="10"
                 android:hint="請輸入匯率"
-                android:inputType="text"
+                android:inputType="number"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent" />
         </LinearLayout>
