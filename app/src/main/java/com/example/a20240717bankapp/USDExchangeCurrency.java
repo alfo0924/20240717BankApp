@@ -32,6 +32,7 @@ public class USDExchangeCurrency extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 // Implement your logic for currency exchange
+                finish();
             }
         });
 

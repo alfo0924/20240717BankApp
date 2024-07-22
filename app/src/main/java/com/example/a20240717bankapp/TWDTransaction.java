@@ -1,5 +1,6 @@
 package com.example.a20240717bankapp;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
@@ -14,7 +15,7 @@ import androidx.core.view.WindowInsetsCompat;
 
 public class TWDTransaction extends AppCompatActivity {
 
-    private int currentBalance = 10000; // Initial balance, you can adjust as needed
+    private int twdBalance = 0; // Initial TWD balance
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -43,8 +44,12 @@ public class TWDTransaction extends AppCompatActivity {
                     resultTextView.setText("請輸入存款金額");
                 } else {
                     int depositAmount = Integer.parseInt(amountEditText.getText().toString());
-                    currentBalance += depositAmount;
-                    resultTextView.setText("存款成功！\n目前餘額：" + currentBalance);
+                    twdBalance += depositAmount;
+                    resultTextView.setText("存款成功！\n目前餘額：" + twdBalance);
+                    Intent intent = new Intent();
+                    intent.putExtra("balance", twdBalance);
+                    setResult(RESULT_OK, intent);
+                    finish();
                 }
             }
         });
@@ -57,11 +62,15 @@ public class TWDTransaction extends AppCompatActivity {
                     resultTextView.setText("請輸入提款金額");
                 } else {
                     int withdrawAmount = Integer.parseInt(amountEditText.getText().toString());
-                    if (withdrawAmount > currentBalance) {
+                    if (withdrawAmount > twdBalance) {
                         resultTextView.setText("餘額不足");
                     } else {
-                        currentBalance -= withdrawAmount;
-                        resultTextView.setText("提款成功！\n目前餘額：" + currentBalance);
+                        twdBalance -= withdrawAmount;
+                        resultTextView.setText("提款成功！\n目前餘額：" + twdBalance);
+                        Intent intent = new Intent();
+                        intent.putExtra("balance", twdBalance);
+                        setResult(RESULT_OK, intent);
+                        finish();
                     }
                 }
             }
